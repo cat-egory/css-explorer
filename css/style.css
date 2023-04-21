@@ -1,0 +1,8 @@
+#float-style {
+  font-size: 30px;
+}
+#float-style .header :first-child {
+  background-color: rgb(231, 39, 25);
+}
+
+/*# sourceMappingURL=style.css.map */
