@@ -1,8 +1,40 @@
 #float-style {
   font-size: 30px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+#float-style .header {
+  height: 100px;
+  line-height: 100px;
+}
+#float-style .header div {
+  height: 100%;
 }
 #float-style .header :first-child {
   background-color: rgb(231, 39, 25);
+  float: left;
+  padding: 0px 10px;
+  width: 150px;
+}
+#float-style .header :last-child {
+  background-color: green;
+}
+#float-style .menu {
+  background-color: orange;
+}
+#float-style .section {
+  background-color: gray;
+  height: 200px;
+  line-height: 200px;
+}
+#float-style .section div {
+  width: 33%;
+  float: left;
+}
+#float-style .section :last-child {
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
