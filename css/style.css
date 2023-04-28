@@ -25,16 +25,50 @@
   background-color: orange;
 }
 #float-style .section {
-  background-color: gray;
   height: 200px;
   line-height: 200px;
 }
 #float-style .section div {
-  width: 33%;
+  width: 33.3333333333%;
+}
+#float-style .section :nth-child(-n+2) {
   float: left;
 }
 #float-style .section :last-child {
   float: right;
+}
+#float-style .contents {
+  height: 400px;
+  line-height: 400px;
+}
+#float-style .contents div {
+  height: 100%;
+}
+#float-style .contents :first-child {
+  background-color: rgb(36, 218, 19);
+  float: left;
+  padding: 0px 10px;
+  width: 80%;
+}
+#float-style .contents :nth-child(2) {
+  background-color: rgb(79, 110, 6);
+}
+#float-style .footer {
+  background-color: rgb(98, 125, 150);
+  padding: 30px 0px;
+}
+
+#flex-style {
+  font-size: 30px;
+  color: azure;
+}
+#flex-style div {
+  border: 1px solid gray;
+}
+
+.select-display {
+  font-size: 40px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

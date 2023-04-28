@@ -3,10 +3,39 @@
   <head>
     <title>CSS - Layout</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script>
+      const INIT_STYLE = "flex-style";
+      const sectionColor = ["blue", "grey", "mediumpurple"];
+
+      window.addEventListener("load", () => {
+        const wrapper = document.querySelector(".styleWrapper");
+        wrapper.setAttribute("id", INIT_STYLE);
+        const radioButton = document.querySelectorAll(
+          'input[name="styleType"]'
+        );
+        radioButton.forEach((btn) => {
+          if (btn.value === INIT_STYLE) {
+            btn.setAttribute("checked", true);
+          }
+          btn.addEventListener("click", (event) =>
+            wrapper.setAttribute("id", event.target.value)
+          );
+        });
+
+        const sectionList = document.querySelectorAll(".section > div");
+        sectionList.forEach((section, index) => {
+          section.style.backgroundColor = sectionColor[index];
+        });
+      });
+    </script>
   </head>
 
   <body>
-    <div id="float-style">
+    <div class="select-display">
+      <input type="radio" name="styleType" value="float-style" />Float
+      <input type="radio" name="styleType" value="flex-style" />Flex
+    </div>
+    <div class="styleWrapper" id="">
       <div class="header">
         <div>LOGO</div>
         <div>Website Heading</div>
@@ -17,8 +46,11 @@
         <div>SECTION2</div>
         <div>SECTION3</div>
       </div>
-      <div class="contents">PAGE CONTENTS</div>
-      <div class="footer">FOOTER</div>
+      <div class="contents">
+        <div>PAGE CONTENTS</div>
+        <div>SIDE BAR</div>
+      </div>
+      <div class="footer">PAGE FOOTER</div>
     </div>
   </body>
 </html>
