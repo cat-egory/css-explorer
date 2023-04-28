@@ -1,9 +1,16 @@
 # css 연습하려고 git을 하나 만들어봤다.
 
+## 구현계획
+
+- 레이아웃 잡기
+- style
+- hover
+- scroll
+
 ## 개발환경 스크립트 (hot reload, scss)
 
-npx sass --watch css/style.scss css/style.css
-live-server
+`npx sass --watch css/style.scss css/style.css`
+`live-server`
 
 ## 교육자료
 

@@ -1,3 +1,30 @@
+.header :first-child {
+  background-color: rgb(231, 39, 25);
+}
+.header :last-child {
+  background-color: green;
+}
+
+.menu {
+  background-color: orange;
+}
+
+.contents :first-child {
+  background-color: rgb(36, 218, 19);
+}
+.contents :nth-child(2) {
+  background-color: rgb(79, 110, 6);
+}
+
+.footer {
+  background-color: rgb(98, 125, 150);
+}
+
+.select-display {
+  font-size: 40px;
+  text-align: center;
+}
+
 #float-style {
   font-size: 30px;
   text-align: center;
@@ -13,16 +40,9 @@
   height: 100%;
 }
 #float-style .header :first-child {
-  background-color: rgb(231, 39, 25);
   float: left;
   padding: 0px 10px;
   width: 150px;
-}
-#float-style .header :last-child {
-  background-color: green;
-}
-#float-style .menu {
-  background-color: orange;
 }
 #float-style .section {
   height: 200px;
@@ -45,30 +65,32 @@
   height: 100%;
 }
 #float-style .contents :first-child {
-  background-color: rgb(36, 218, 19);
   float: left;
   padding: 0px 10px;
   width: 80%;
 }
-#float-style .contents :nth-child(2) {
-  background-color: rgb(79, 110, 6);
-}
 #float-style .footer {
-  background-color: rgb(98, 125, 150);
   padding: 30px 0px;
 }
 
 #flex-style {
+  display: flex;
+  flex-direction: column;
   font-size: 30px;
   color: azure;
-}
-#flex-style div {
-  border: 1px solid gray;
-}
-
-.select-display {
-  font-size: 40px;
   text-align: center;
+}
+#flex-style .header {
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+#flex-style .header :first-child {
+  width: 20%;
+}
+#flex-style .header :last-child {
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
